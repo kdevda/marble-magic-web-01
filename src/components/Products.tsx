@@ -11,7 +11,7 @@ export const Products = () => {
     {
       title: "Granite Selection",
       description: "Premium granite stones including Black Galaxy, Steel Grey, and exclusive varieties",
-      image: "https://images.unsplash.com/photo-1600573472591-ee6c563aaec9?ixlib=rb-4.0.3"
+      image: "https://images.unsplash.com/photo-1604715892639-61d265a76ce6?ixlib=rb-4.0.3"
     },
     {
       title: "Luxury Stones",
