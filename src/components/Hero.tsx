@@ -6,28 +6,28 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=2000')",
+          backgroundImage: "url('/lovable-uploads/564fe528-49fa-4f40-b9e6-2f61af545989.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "brightness(0.7)"
+          backgroundAttachment: "fixed"
         }}
       />
-      <div className="relative z-10 text-center text-white px-4">
-        <motion.h1 
+      <div className="relative z-10 text-center text-white max-w-4xl px-4">
+        <motion.img 
+          src="/lovable-uploads/564fe528-49fa-4f40-b9e6-2f61af545989.png"
+          alt="Shree Sai Marble & Granites Logo"
+          className="w-32 md:w-48 mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-7xl font-bold mb-6"
-        >
-          Shree Sai Marble & Granites
-        </motion.h1>
+        />
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl mb-8"
+          className="text-xl md:text-2xl mb-8 font-light"
         >
-          Premium Natural Stone Suppliers Since 2009
+          Crafting Elegance in Stone Since 2009
         </motion.p>
       </div>
     </div>
