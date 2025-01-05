@@ -18,24 +18,27 @@ export const ContactForm = () => {
     e.preventDefault();
     
     const formPayload = {
-      access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5",
-      subject: "New Inquiry from Website",
+      access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5".trim(),
+      subject: "New Contact Form Submission",
       from_name: formData.name,
       email: formData.email,
       phone: formData.phone,
-      message: formData.message
+      message: formData.message,
+      botcheck: false
     };
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(formPayload)
       });
 
       const data = await response.json();
+      console.log('Form submission response:', data);
 
       if (data.success) {
         toast({
