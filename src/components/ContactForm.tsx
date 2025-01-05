@@ -17,34 +17,34 @@ export const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    const formPayload = {
+      access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5",
+      subject: "New Inquiry from Website",
+      from_name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message
+    };
+
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5", // This is a public access key for Web3Forms
-          subject: "New Inquiry from Website",
-          from_name: formData.name,
-          email_to: "info@shreesaimarble.com",
-          message: `
-            Name: ${formData.name}
-            Email: ${formData.email}
-            Phone: ${formData.phone}
-            Message: ${formData.message}
-          `
-        })
+        body: JSON.stringify(formPayload)
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         toast({
           title: "Success!",
           description: "Your message has been sent. We'll get back to you soon.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        throw new Error('Failed to send message');
+        throw new Error(data.message || 'Failed to send message');
       }
     } catch (error) {
       toast({
@@ -52,6 +52,7 @@ export const ContactForm = () => {
         description: "Failed to send message. Please try again later.",
         variant: "destructive"
       });
+      console.error('Form submission error:', error);
     }
   };
 
