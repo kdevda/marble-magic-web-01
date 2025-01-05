@@ -5,8 +5,8 @@ export const Navigation = () => {
   const menuItems = [
     { title: "Home", target: "home" },
     { title: "About", target: "about" },
-    { title: "Services", target: "services" },
-    { title: "Collections", target: "services" },
+    { title: "Services", target: "our-services" },
+    { title: "Collections", target: "collections" },
     { title: "Testimonials", target: "testimonials" },
     { title: "Contact", target: "contact" },
   ];
