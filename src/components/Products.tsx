@@ -11,7 +11,7 @@ export const Products = () => {
     {
       title: "Granite Selection",
       description: "Premium granite stones sourced from quarries worldwide",
-      image: "https://images.unsplash.com/photo-1604715892639-61d265a76ce6?auto=format&fit=crop&q=80&w=500"
+      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&w=500"
     },
     {
       title: "Luxury Stones",
@@ -21,7 +21,7 @@ export const Products = () => {
   ];
 
   return (
-    <section id="collections" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

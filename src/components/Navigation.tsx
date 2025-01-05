@@ -6,7 +6,7 @@ export const Navigation = () => {
     { title: "Home", target: "home" },
     { title: "About", target: "about" },
     { title: "Services", target: "services" },
-    { title: "Collections", target: "collections" },
+    { title: "Collections", target: "services" },
     { title: "Testimonials", target: "testimonials" },
     { title: "Contact", target: "contact" },
   ];
