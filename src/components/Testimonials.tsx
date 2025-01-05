@@ -22,13 +22,13 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="min-h-screen flex items-center" style={{
+    <section id="testimonials" className="py-20" style={{
       backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1604715892639-61d265a76ce6?auto=format&fit=crop&q=80&w=1500')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed"
     }}>
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export const Testimonials = () => {
         >
           Client Testimonials
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -47,10 +47,10 @@ export const Testimonials = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-white/10 backdrop-blur-sm border-none">
-                <CardContent className="p-6 text-white">
+              <Card className="bg-white/10 backdrop-blur-sm border-none h-full">
+                <CardContent className="p-6 text-white h-full flex flex-col">
                   <Quote className="w-8 h-8 mb-4 text-luxury-gold" />
-                  <p className="mb-4 italic">{testimonial.text}</p>
+                  <p className="mb-4 italic flex-grow">{testimonial.text}</p>
                   <div>
                     <p className="font-bold">{testimonial.author}</p>
                     <p className="text-sm text-gray-300">{testimonial.position}</p>
