@@ -19,7 +19,7 @@ export const ContactForm = () => {
     
     // Create a new access key at https://web3forms.com/
     const formPayload = {
-      access_key: "YOUR-ACCESS-KEY-HERE",
+      access_key: "42144ef2-fc65-438d-a315-9a71e2c67bb7",
       subject: "New Contact Form Submission - Shree Sai Marble",
       from_name: formData.name,
       email: formData.email,
