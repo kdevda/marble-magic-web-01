@@ -17,14 +17,14 @@ export const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Create a new access key at https://web3forms.com/
     const formPayload = {
-      access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5".trim(),
-      subject: "New Contact Form Submission",
+      access_key: "YOUR-ACCESS-KEY-HERE",
+      subject: "New Contact Form Submission - Shree Sai Marble",
       from_name: formData.name,
       email: formData.email,
       phone: formData.phone,
-      message: formData.message,
-      botcheck: false
+      message: formData.message
     };
 
     try {
