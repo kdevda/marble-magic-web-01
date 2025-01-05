@@ -24,7 +24,7 @@ export const ContactForm = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // You'll need to sign up at Web3Forms and get an access key
+          access_key: "c4b665c5-3a2f-4a1c-9368-4aa37d1f8aa5", // This is a public access key for Web3Forms
           subject: "New Inquiry from Website",
           from_name: formData.name,
           email_to: "info@shreesaimarble.com",
