@@ -27,7 +27,7 @@ export const ContactForm = () => {
           access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // You'll need to sign up at Web3Forms and get an access key
           subject: "New Inquiry from Website",
           from_name: formData.name,
-          email_to: "kd@technexus.ca",
+          email_to: "info@shreesaimarble.com",
           message: `
             Name: ${formData.name}
             Email: ${formData.email}

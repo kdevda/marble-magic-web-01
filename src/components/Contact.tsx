@@ -57,7 +57,7 @@ export const Contact = () => {
             <Mail className="w-8 h-8 mx-auto mb-4 text-luxury-gold" />
             <h3 className="text-xl font-bold mb-2">Email Us</h3>
             <p className="text-gray-300">
-              <a href="mailto:kd@technexus.ca" className="hover:text-luxury-gold transition-colors">kd@technexus.ca</a>
+              <a href="mailto:info@shreesaimarble.com" className="hover:text-luxury-gold transition-colors">info@shreesaimarble.com</a>
             </p>
           </motion.div>
         </div>

@@ -16,7 +16,7 @@ export const Hero = () => {
         <motion.img 
           src="/lovable-uploads/564fe528-49fa-4f40-b9e6-2f61af545989.png"
           alt="Shree Sai Marble & Granites Logo"
-          className="w-32 md:w-48 mx-auto mb-8 bg-white/20 p-4 rounded-lg backdrop-blur-sm"
+          className="w-24 md:w-32 mx-auto mb-8 bg-white/20 p-4 rounded-lg backdrop-blur-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -25,7 +25,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg"
+          className="text-3xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg bg-black/30 px-4 py-2 rounded-lg inline-block"
         >
           Crafting Elegance in Stone
         </motion.h1>
@@ -35,7 +35,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl mb-8 font-light text-white drop-shadow-lg"
         >
-          Since 2009
+          Since 2007
         </motion.p>
       </div>
     </div>

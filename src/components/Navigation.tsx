@@ -28,6 +28,7 @@ export const Navigation = () => {
                 offset={-70}
                 duration={500}
                 className="text-white hover:text-luxury-gold cursor-pointer transition-colors"
+                activeClass="text-luxury-gold"
               >
                 {item.title}
               </Link>
