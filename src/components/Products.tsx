@@ -6,23 +6,23 @@ export const Products = () => {
     {
       title: "Marble Collection",
       description: "Exquisite marble varieties from Italian Calacatta to Indian Makrana",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80&w=500"
+      image: "https://images.unsplash.com/photo-1629977009058-a1c1db0ac9cc?auto=format&fit=crop&q=80&w=500"
     },
     {
       title: "Granite Selection",
       description: "Premium granite stones sourced from quarries worldwide",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&w=500"
+      image: "https://images.unsplash.com/photo-1604715892639-61d265a76ce6?auto=format&fit=crop&q=80&w=500"
     },
     {
       title: "Luxury Stones",
       description: "Rare and exclusive stone collections for distinctive projects",
-      image: "https://images.unsplash.com/photo-1599619585752-c3edb42a414c?auto=format&fit=crop&q=80&w=500"
+      image: "https://images.unsplash.com/photo-1604715892565-28bde2a279d5?auto=format&fit=crop&q=80&w=500"
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="services" className="min-h-screen flex items-center bg-white">
+      <div className="container mx-auto px-4 py-20">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

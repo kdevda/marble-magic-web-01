@@ -22,13 +22,13 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20" style={{
+    <section id="testimonials" className="min-h-screen flex items-center" style={{
       backgroundImage: "linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1604715892639-61d265a76ce6?auto=format&fit=crop&q=80&w=1500')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed"
     }}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-20">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -4,8 +4,8 @@ import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-luxury-black text-white">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="min-h-screen flex items-center bg-luxury-black text-white">
+      <div className="container mx-auto px-4 py-20">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
