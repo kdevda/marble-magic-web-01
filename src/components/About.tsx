@@ -3,16 +3,19 @@ import { motion } from "framer-motion";
 export const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center bg-luxury-gray relative">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          opacity: "0.1"
-        }}
-      />
+      <div className="absolute inset-0 z-0">
+        <div
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "scroll", // Changed from fixed to scroll
+            height: "100%",
+            width: "100%"
+          }}
+        />
+        <div className="absolute inset-0 bg-white/90" /> {/* Separate overlay div */}
+      </div>
       <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

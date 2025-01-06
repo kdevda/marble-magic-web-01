@@ -22,15 +22,19 @@ export const Services = () => {
 
   return (
     <section id="our-services" className="min-h-screen flex items-center relative">
-      <div 
-        className="absolute inset-0 z-0 bg-black/40"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}
-      />
+      <div className="absolute inset-0 z-0">
+        <div
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "scroll", // Changed from fixed to scroll
+            height: "100%",
+            width: "100%"
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" /> {/* Separate overlay div */}
+      </div>
       <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
